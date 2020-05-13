@@ -1,32 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    background-image: url('https://img.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1035-17545.jpg?size=626&ext=jpg');
-    background-size: auto 110vh;
+     background-color: rgb(250, 201, 94);
+    background-size: auto 100vh;
     font-family: Tahoma;
     height: 100vh;
+    width: 90vw;
+    font-size: 10px;
+  }
+  /*Se a tela tiver pelo menos 400 px vai carregar esses estilos*/
+  @media(min-width: 400px){
+    body {
+      font-size: 14px;
+    }
+
+  }
+
+  @media(min-width: 600px){
+    body {
+      font-size: 18px;
+    }
+
+  }
+
+  header{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .menu{
-    background-color: white;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px black;
+    width: 100vw;
+    position: fixed;
+    top: 0;
   }
   .menu li {
     list-style: none;
+    
   }
   .menu ul{
     display: flex;
     justify-content:space-around; 
   }
+  .menu a{
+    display: block;
+    padding: 10px 20px;
+
+
+  }
   a{  
-    color: teal;
+    color: rgb(0, 0, 0);
     text-decoration:none;
   }
   a:hover{
     text-decoration:underline;
+    color: seagreen
   }
   .site-subtitle,
   .site-title {
-    color: darkblue;
+    color: rgb(0, 0, 0);
     text-align:center;
+   }
+
+  .site-title{
+    font-size: 4 en;
   }
   .site-subtitle {
     font-style: italic;
+
   }
-  
+
+  .img-portifolio {
+    width: 180px;
+    height: 180px;
+  }
+  .sobre,
+  .portifolio,
+  .contato {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .sobre {
+    background-color: rgb(255, 255, 255);
+  }
+  .portifolio {
+    background-color: rgb(81, 219, 99);
+  }
+  .contato {
+    background-color: rgb(219, 187, 81);
+  }
+
+  .sobre h2,
+  .portifolio h2,
+  .contato h2 {
+    color: whitesmoke;
+    background-color: rgb(87, 87, 87);
+    width: 100vw;
+    padding-left: 25px;
+
+  }
+  .container{
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .sobre-detalhes-nome{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+  }
+  .retrato {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: inline-block;
+    }
+
+  img {
+    border: none;
+    max-width: 100%;
+  }
