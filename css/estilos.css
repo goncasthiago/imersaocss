@@ -38,6 +38,7 @@ body {
     position: fixed;
     width: 100vw;
     top: 0;
+    z-index: 1;
   }
   .menu li {
     list-style: none;
@@ -50,12 +51,19 @@ body {
   .menu a{
     display: block;
     padding: 10px 20px;
+    transition: 0.5s;
 
 
   }
   a{  
     color: rgb(0, 0, 0);
     text-decoration:none;
+  }
+
+  .menu a:active,
+  .menu a:hover{
+    background-color: rgba(46, 139, 86, 0.781);
+    color: whitesmoke;
   }
   a:hover{
     text-decoration:underline;
@@ -79,7 +87,27 @@ body {
     font-style: italic;
 
     line-height: 1.4 em;
+  }
+/*
+  .site-subtitle{
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+    animation: animacaoSubTitulo 1s forwards; 
+  }
+*/
 
+
+  .pri{
+    transform: scale(3) translateY(50vh) rotateX(40deg);
+    opacity: 1;
+    animation: linear animacaoSubTitulo 5s forwards; 
+  }
+
+  @keyframes animacaoSubTitulo{
+    100%{
+      transform: scale(0) translateY(-20vh) rotateX(80deg);
+      opacity: 0;
+    }
   }
 
 
@@ -92,6 +120,8 @@ body {
   }
 
 
+
+
   .projetos {
     background-color: rgb(255, 255, 255);
   }
@@ -99,7 +129,20 @@ body {
     background-color: rgb(81, 219, 99);
   }
   .contato {
-    background-color: rgb(219, 187, 81);
+    background-color: rgb(55, 81, 95);
+  }
+
+  .contato a {
+    color: whitesmoke;
+    font-size: 4em;
+    text-align: center;
+  }
+
+  .contato a:active,
+  .contato a:hover{
+    text-decoration: none;
+    text-shadow: 0px 0px 21px rgba(255,255,255,0.5);
+    transition: text-shadow 1s;
   }
 
 
@@ -107,6 +150,15 @@ body {
     padding-left: 20px;
     margin-bottom: 1.5 em;
   }
+
+  .sobre h2,
+  .projetos h2,
+  .contato h2 {
+    padding-top: 1.8em;
+   
+    
+  }
+
   .container{
     
     display: flex;
@@ -134,9 +186,14 @@ body {
     height: 180px;
     object-fit: cover;
     object-position: center;
+    transition: 0.5s;
   }
 
-  .projetos .grid{
+  .img-portfolio:hover{
+    transform: scale(1.2) rotate(2deg);
+  }
+
+  .grid{
 
     display: grid;
     gap: 1em;
@@ -169,4 +226,28 @@ body {
     text-align: center;
     height: calc(100vh -4.6em);
   }
+
+  @media (min-width: 551px){
+    .contato .grid{
+      align-items: center;
+      justify-content: center;
+      
+      grid-template-columns: 250px 250px;
+  
+    }
+  }
+
+  @media (min-width: 860px){
+    .contato .grid{
+      
+      grid-template-columns: repeat(3, 250px);
+      align-items: center;
+      justify-content: center;
+      
+      
+    }
+  }
+
+
+
 
