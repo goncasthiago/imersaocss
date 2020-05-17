@@ -14,9 +14,10 @@
           <ul>
           <li><a href='#sobre'>Sobre</a></li>
           <li><a href='#projetos'>Projetos</a></li>
-          <li><a href='#contato'>Contato</a></li>
+          <li><a href='#contato'>Contatos</a></li>
           </ul>
         </nav>
+        <div><img class='retrato' src='img/thiago.jpg'></div>
         <div>
         <h1 class='site-title'> Thiago Gonçalves</h1>
         <h2 class='site-subtitle pri'>Inovando com Tecnologia</h2>  
@@ -24,22 +25,26 @@
     </header>
 
     <section class="sobre" id="sobre">
-        <div class="telas">
-            <h2>Sobre</h2>
+        <h2>Sobre</h2>
+        <figure class="avatar">
+            <img src="./img/thiago.jpg" alt="Thiago Gonçalves">
+        </figure>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repellendus? Ducimus vero natus aut. 
+            Ullam delectus, nemo tenetur quidem ducimus adipisci autem, eius dolore tempora quaerat fuga incidunt 
+            consectetur optio.</p>
+        <p>Dicta velit, eos ea hic doloremque iusto deserunt. Necessitatibus aut nisi doloremque, dolor quam nobis 
+            natus? Eos mollitia dolor dolores omnis aut natus praesentium et nihil dolorum? Excepturi, quidem molestias.</p>
+      
+        <p>Ad ducimus suscipit fugiat vitae ipsum minus provident explicabo illo ipsa. Explicabo sed 
+           error ipsam deserunt veritatis ratione omnis atque vel modi, sunt accusamus, quasi similique 
+           labore dolores nostrum odit?</p>
         
-                <div class='container'>
-                    <img class='retrato' src='img/thiago.jpg'>
-                    <div class='sobre-detalhes-nome'><a href="#">Thiago Debia Gonçalves</a>
-                    
-                        
-                    </div>
-                </div>
-                <div>
-                    Adicionar texto
-                </div>
+        <p>Impedit, repellat commodi maiores molestiae sed consequatur esse corporis aliquid animi fugiat 
+            repellendus reprehenderit, aut officia quam culpa deserunt provident iste eum! Magni, officiis 
+            ratione natus eum soluta nam quo!</p>
 
-        </div>
-        
+            <P>Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS</a> da Alura</P> 
+
     </section>
 
     <section class="projetos" id="projetos">
@@ -47,29 +52,71 @@
             <h2>Projetos</h2>
 
             <div class="grid">
-                <figure>
-                    <img class="img-portfolio" src="img/python.png" alt="Python">
-                    <figcaption>Desenvolvimento Python</figcaption>
-                </figure>
+                
+                <div class="flip-card">
+                    <div class="card">
+                        <figure class="card-front">
+                                <img class="img-portfolio" src="img/python.png" alt="Python">
+                                <figcaption>Desenvolvimento Python</figcaption>
+                        </figure>
+                        <div class="card-back">
+                            <h3>Descrição</h3>
+                        </div>
+                    </div>
+                </div>
+                
+            
 
-                <figure>
-                    <img class="img-portfolio" src="img/datastudiio.svg" alt="Data Studio">
-                    <figcaption>Relatórios online com Data Studio</figcaption>
-                </figure>
+                <div class="flip-card">
+                    <div class="card">
+                        <figure class="card-front">
+                            <img class="img-portfolio" src="img/datastudiio.svg" alt="Data Studio">
+                            <figcaption>Relatórios online com Data Studio</figcaption>
+                        </figure>
+                        <div class="card-back">
+                            <h3>Descrição</h3>
+                        </div>
+                    </div>
+                </div>
 
-                <figure>
-                    <img class="img-portfolio" src="img/gaps.png" alt="Python">
-                    <figcaption>Automatização Gsuite Google</figcaption>
-                </figure>
+                <div class="flip-card">
+                    <div class="card">
+                        <figure class="card-front">
+                            <img class="img-portfolio" src="img/gaps.png" alt="Python">
+                            <figcaption>Automatização Gsuite Google</figcaption>
+                        </figure>
+                        <div class="card-back">
+                            <h3>Descrição</h3>
+                        </div>
+                    </div>
+                </div>
 
-                <figure>
-                    <img class="img-portfolio" src="img/whats.png" alt="Bots para Whatsapp">
-                    <figcaption>Bots para Whatsapp</figcaption>
-                </figure>
-                <figure>
-                    <img class="img-portfolio" src="img/gsuite.png" alt="Treinamentos Gsuite">
-                    <figcaption>Treinamentos GSuite</figcaption>
-                </figure>
+                <div class="flip-card">
+                    <div class="card">
+                        <figure class="card-front">
+                            <img class="img-portfolio" src="img/whats.png" alt="Bots para Whatsapp">
+                            <figcaption>Bots para Whatsapp</figcaption>
+                        </figure>
+                        <div class="card-back">
+                            <h3>Descrição</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="card">
+                        <figure class="card-front">
+                            <img class="img-portfolio" src="img/gsuite.png" alt="Treinamentos Gsuite">
+                            <figcaption>Treinamentos GSuite</figcaption>
+                        </figure>
+                        <div class="card-back">
+                            <h3>Descrição</h3>
+                        </div>
+                    </div>
+                </div>  
+
+
+
             </div>
         
         
@@ -79,9 +126,11 @@
 
     <section class="contato" id="contato">
         <div class="telas">
-            <h2>Contato</h2>
+            <h2>Contatos</h2>
 
+            
             <div class="grid icons">
+                
                 <a target="_blank" href="https://github.com/goncasthiago"><i class="fab fa-github-square"></i></a>
                 
                 <a target="_blank" rel="noopener nofollow" href="https://www.linkedin.com/in/thiagodebia/"><i class="fab fa-linkedin"></i></a>
@@ -90,6 +139,11 @@
             </div>
         
         </div>
+                    
+
+        
+
+
     </section>
 
 
